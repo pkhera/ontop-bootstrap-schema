@@ -1,0 +1,76 @@
+{
+  "relations" : [ {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_9",
+      "determinants" : [ "\"INVOICE_ID\"" ],
+      "isPrimaryKey" : true
+    } ],
+    "foreignKeys" : [ {
+      "name" : "CONSTRAINT_9F",
+      "from" : {
+        "relation" : [ "\"SALES\"", "\"INVOICE\"" ],
+        "columns" : [ "\"CUSTOMER_ID\"" ]
+      },
+      "to" : {
+        "relation" : [ "\"SALES\"", "\"CUSTOMER\"" ],
+        "columns" : [ "\"CUSTOMER_ID\"" ]
+      }
+    } ],
+    "columns" : [ {
+      "name" : "\"INVOICE_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"CUSTOMER_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"ISSUED_ON\"",
+      "isNullable" : false,
+      "datatype" : "DATE"
+    }, {
+      "name" : "\"TOTAL_EUR\"",
+      "isNullable" : false,
+      "datatype" : "DECIMAL(12, 2)"
+    } ],
+    "name" : [ "\"SALES\"", "\"INVOICE\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"SALES\"", "\"INVOICE\"" ] ]
+  }, {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_5",
+      "determinants" : [ "\"CUSTOMER_ID\"" ],
+      "isPrimaryKey" : true
+    }, {
+      "name" : "CONSTRAINT_INDEX_5",
+      "determinants" : [ "\"VAT_NUMBER\"" ],
+      "isPrimaryKey" : false
+    } ],
+    "columns" : [ {
+      "name" : "\"CUSTOMER_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"COMPANY_NAME\"",
+      "isNullable" : false,
+      "datatype" : "CHARACTER VARYING(120)"
+    }, {
+      "name" : "\"CONTACT_EMAIL\"",
+      "isNullable" : true,
+      "datatype" : "CHARACTER VARYING(120)"
+    }, {
+      "name" : "\"VAT_NUMBER\"",
+      "isNullable" : true,
+      "datatype" : "CHARACTER VARYING(20)"
+    } ],
+    "name" : [ "\"SALES\"", "\"CUSTOMER\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"SALES\"", "\"CUSTOMER\"" ] ]
+  } ],
+  "metadata" : {
+    "dbmsProductName" : "H2",
+    "dbmsVersion" : "2.2.224 (2023-09-17)",
+    "driverName" : "H2 JDBC Driver",
+    "driverVersion" : "2.2.224 (2023-09-17)",
+    "quotationString" : "\"",
+    "extractionTime" : "2026-08-13T20:42:37"
+  }
+}

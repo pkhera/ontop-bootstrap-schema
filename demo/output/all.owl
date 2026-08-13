@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/"
+     xml:base="http://example.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/ACCOUNT_MANAGER#ref-CUSTOMER_ID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/ACCOUNT_MANAGER#ref-CUSTOMER_ID"/>
+    
+
+
+    <!-- http://example.org/ACCOUNT_MANAGER#ref-EMPLOYEE_ID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/ACCOUNT_MANAGER#ref-EMPLOYEE_ID"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#ref-DEPARTMENT_ID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/EMPLOYEE#ref-DEPARTMENT_ID"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE_SKILL#ref-EMPLOYEE_ID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/EMPLOYEE_SKILL#ref-EMPLOYEE_ID"/>
+    
+
+
+    <!-- http://example.org/INVOICE#ref-CUSTOMER_ID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/INVOICE#ref-CUSTOMER_ID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/ACCOUNT_MANAGER#CUSTOMER_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ACCOUNT_MANAGER#CUSTOMER_ID"/>
+    
+
+
+    <!-- http://example.org/ACCOUNT_MANAGER#EMPLOYEE_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ACCOUNT_MANAGER#EMPLOYEE_ID"/>
+    
+
+
+    <!-- http://example.org/CUSTOMER#COMPANY_NAME -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/CUSTOMER#COMPANY_NAME"/>
+    
+
+
+    <!-- http://example.org/CUSTOMER#CONTACT_EMAIL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/CUSTOMER#CONTACT_EMAIL"/>
+    
+
+
+    <!-- http://example.org/CUSTOMER#CUSTOMER_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/CUSTOMER#CUSTOMER_ID"/>
+    
+
+
+    <!-- http://example.org/CUSTOMER#VAT_NUMBER -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/CUSTOMER#VAT_NUMBER"/>
+    
+
+
+    <!-- http://example.org/DEPARTMENT#DEPARTMENT_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/DEPARTMENT#DEPARTMENT_ID"/>
+    
+
+
+    <!-- http://example.org/DEPARTMENT#DEPARTMENT_NAME -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/DEPARTMENT#DEPARTMENT_NAME"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#DEPARTMENT_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE#DEPARTMENT_ID"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#EMPLOYEE_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE#EMPLOYEE_ID"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#HIRED_ON -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE#HIRED_ON"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#LAST_NAME -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE#LAST_NAME"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE#MONTHLY_WAGE -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE#MONTHLY_WAGE"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE_SKILL#EMPLOYEE_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE_SKILL#EMPLOYEE_ID"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE_SKILL#LEVEL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE_SKILL#LEVEL"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE_SKILL#SKILL_CODE -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/EMPLOYEE_SKILL#SKILL_CODE"/>
+    
+
+
+    <!-- http://example.org/INVOICE#CUSTOMER_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/INVOICE#CUSTOMER_ID"/>
+    
+
+
+    <!-- http://example.org/INVOICE#INVOICE_ID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/INVOICE#INVOICE_ID"/>
+    
+
+
+    <!-- http://example.org/INVOICE#ISSUED_ON -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/INVOICE#ISSUED_ON"/>
+    
+
+
+    <!-- http://example.org/INVOICE#TOTAL_EUR -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/INVOICE#TOTAL_EUR"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/ACCOUNT_MANAGER -->
+
+
+    <owl:Class rdf:about="http://example.org/ACCOUNT_MANAGER"/>
+    
+
+
+    <!-- http://example.org/CUSTOMER -->
+
+
+    <owl:Class rdf:about="http://example.org/CUSTOMER"/>
+    
+
+
+    <!-- http://example.org/DEPARTMENT -->
+
+
+    <owl:Class rdf:about="http://example.org/DEPARTMENT"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE -->
+
+
+    <owl:Class rdf:about="http://example.org/EMPLOYEE"/>
+    
+
+
+    <!-- http://example.org/EMPLOYEE_SKILL -->
+
+
+    <owl:Class rdf:about="http://example.org/EMPLOYEE_SKILL"/>
+    
+
+
+    <!-- http://example.org/INVOICE -->
+
+
+    <owl:Class rdf:about="http://example.org/INVOICE"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.5.1) https://github.com/owlcs/owlapi/ -->
+
+

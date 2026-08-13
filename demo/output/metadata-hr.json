@@ -1,0 +1,128 @@
+{
+  "relations" : [ {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_27C",
+      "determinants" : [ "\"EMPLOYEE_ID\"", "\"CUSTOMER_ID\"" ],
+      "isPrimaryKey" : true
+    } ],
+    "foreignKeys" : [ {
+      "name" : "CONSTRAINT_2",
+      "from" : {
+        "relation" : [ "\"HR\"", "\"ACCOUNT_MANAGER\"" ],
+        "columns" : [ "\"EMPLOYEE_ID\"" ]
+      },
+      "to" : {
+        "relation" : [ "\"HR\"", "\"EMPLOYEE\"" ],
+        "columns" : [ "\"EMPLOYEE_ID\"" ]
+      }
+    } ],
+    "columns" : [ {
+      "name" : "\"EMPLOYEE_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"CUSTOMER_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    } ],
+    "name" : [ "\"HR\"", "\"ACCOUNT_MANAGER\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"HR\"", "\"ACCOUNT_MANAGER\"" ] ]
+  }, {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_4",
+      "determinants" : [ "\"DEPARTMENT_ID\"" ],
+      "isPrimaryKey" : true
+    } ],
+    "columns" : [ {
+      "name" : "\"DEPARTMENT_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"DEPARTMENT_NAME\"",
+      "isNullable" : false,
+      "datatype" : "CHARACTER VARYING(80)"
+    } ],
+    "name" : [ "\"HR\"", "\"DEPARTMENT\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"HR\"", "\"DEPARTMENT\"" ] ]
+  }, {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_7",
+      "determinants" : [ "\"EMPLOYEE_ID\"" ],
+      "isPrimaryKey" : true
+    } ],
+    "foreignKeys" : [ {
+      "name" : "CONSTRAINT_75",
+      "from" : {
+        "relation" : [ "\"HR\"", "\"EMPLOYEE\"" ],
+        "columns" : [ "\"DEPARTMENT_ID\"" ]
+      },
+      "to" : {
+        "relation" : [ "\"HR\"", "\"DEPARTMENT\"" ],
+        "columns" : [ "\"DEPARTMENT_ID\"" ]
+      }
+    } ],
+    "columns" : [ {
+      "name" : "\"EMPLOYEE_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"DEPARTMENT_ID\"",
+      "isNullable" : true,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"LAST_NAME\"",
+      "isNullable" : false,
+      "datatype" : "CHARACTER VARYING(80)"
+    }, {
+      "name" : "\"HIRED_ON\"",
+      "isNullable" : true,
+      "datatype" : "DATE"
+    }, {
+      "name" : "\"MONTHLY_WAGE\"",
+      "isNullable" : true,
+      "datatype" : "DECIMAL(10, 2)"
+    } ],
+    "name" : [ "\"HR\"", "\"EMPLOYEE\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"HR\"", "\"EMPLOYEE\"" ] ]
+  }, {
+    "uniqueConstraints" : [ {
+      "name" : "CONSTRAINT_10",
+      "determinants" : [ "\"EMPLOYEE_ID\"", "\"SKILL_CODE\"" ],
+      "isPrimaryKey" : true
+    } ],
+    "foreignKeys" : [ {
+      "name" : "CONSTRAINT_1",
+      "from" : {
+        "relation" : [ "\"HR\"", "\"EMPLOYEE_SKILL\"" ],
+        "columns" : [ "\"EMPLOYEE_ID\"" ]
+      },
+      "to" : {
+        "relation" : [ "\"HR\"", "\"EMPLOYEE\"" ],
+        "columns" : [ "\"EMPLOYEE_ID\"" ]
+      }
+    } ],
+    "columns" : [ {
+      "name" : "\"EMPLOYEE_ID\"",
+      "isNullable" : false,
+      "datatype" : "INTEGER"
+    }, {
+      "name" : "\"SKILL_CODE\"",
+      "isNullable" : false,
+      "datatype" : "CHARACTER VARYING(20)"
+    }, {
+      "name" : "\"LEVEL\"",
+      "isNullable" : true,
+      "datatype" : "INTEGER"
+    } ],
+    "name" : [ "\"HR\"", "\"EMPLOYEE_SKILL\"" ],
+    "otherNames" : [ [ "\"TESTDB\"", "\"HR\"", "\"EMPLOYEE_SKILL\"" ] ]
+  } ],
+  "metadata" : {
+    "dbmsProductName" : "H2",
+    "dbmsVersion" : "2.2.224 (2023-09-17)",
+    "driverName" : "H2 JDBC Driver",
+    "driverVersion" : "2.2.224 (2023-09-17)",
+    "quotationString" : "\"",
+    "extractionTime" : "2026-08-13T20:42:38"
+  }
+}

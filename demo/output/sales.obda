@@ -1,0 +1,21 @@
+[PrefixDeclaration]
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+owl:		http://www.w3.org/2002/07/owl#
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		<http://example.org/INVOICE/INVOICE_ID={INVOICE_ID}> a <http://example.org/INVOICE> ; <http://example.org/INVOICE#INVOICE_ID> {INVOICE_ID}^^xsd:integer ; <http://example.org/INVOICE#CUSTOMER_ID> {CUSTOMER_ID}^^xsd:integer ; <http://example.org/INVOICE#ISSUED_ON> {ISSUED_ON}^^xsd:date ; <http://example.org/INVOICE#TOTAL_EUR> {TOTAL_EUR}^^xsd:decimal . 
+source		SELECT * FROM "SALES"."INVOICE"
+
+mappingId	MAPPING-ID2
+target		<http://example.org/INVOICE/INVOICE_ID={INVOICE_INVOICE_ID}> <http://example.org/INVOICE#ref-CUSTOMER_ID> <http://example.org/CUSTOMER/CUSTOMER_ID={CUSTOMER_CUSTOMER_ID}> . 
+source		SELECT "SALES"."INVOICE"."INVOICE_ID" AS "INVOICE_INVOICE_ID", "SALES"."CUSTOMER"."CUSTOMER_ID" AS "CUSTOMER_CUSTOMER_ID" FROM "SALES"."INVOICE", "SALES"."CUSTOMER" WHERE "SALES"."INVOICE"."CUSTOMER_ID" = "SALES"."CUSTOMER"."CUSTOMER_ID"
+
+mappingId	MAPPING-ID3
+target		<http://example.org/CUSTOMER/CUSTOMER_ID={CUSTOMER_ID}> a <http://example.org/CUSTOMER> ; <http://example.org/CUSTOMER#CUSTOMER_ID> {CUSTOMER_ID}^^xsd:integer ; <http://example.org/CUSTOMER#COMPANY_NAME> {COMPANY_NAME}^^xsd:string ; <http://example.org/CUSTOMER#CONTACT_EMAIL> {CONTACT_EMAIL}^^xsd:string ; <http://example.org/CUSTOMER#VAT_NUMBER> {VAT_NUMBER}^^xsd:string . 
+source		SELECT * FROM "SALES"."CUSTOMER"
+]]
+

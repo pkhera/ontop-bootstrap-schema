@@ -1,0 +1,2 @@
+Error occurred during the metadata extraction: No relation found in the schema(s) [marketing]. Available schemas: [HR, INFORMATION_SCHEMA, SALES]
+it.unibz.inf.ontop.exception.MetadataExtractionException: No relation found in the schema(s) [marketing]. Available schemas: [HR, INFORMATION_SCHEMA, SALES]
