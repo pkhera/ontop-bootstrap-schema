@@ -1,0 +1,7 @@
+target/
+demo/*.obda
+demo/*.owl
+demo/testdb*
+.idea/
+*.iml
+dependency-reduced-pom.xml
